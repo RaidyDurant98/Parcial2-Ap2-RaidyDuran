@@ -15,9 +15,11 @@ namespace Entidades
         public string Descripcion { get; set; }
         public decimal Monto { get; set; }
 
+        public virtual ICollection<PresupuestosDetalles> Relacion { get; set; }
+
         public Presupuestos()
         {
-
+            Relacion = new HashSet<PresupuestosDetalles>();
         }
 
         public Presupuestos(int presupuestoId, string descripcion, decimal monto, DateTime fecha)

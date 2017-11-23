@@ -11,9 +11,9 @@ namespace BLL
 {
     public class PresupuestoDetalleBLL
     {
-        public static bool Guardar(PresupuestosDetalle presupuestosDetalle)
+        public static bool Guardar(PresupuestosDetalles presupuestosDetalle)
         {
-            using (var context = new Respository<PresupuestosDetalle>())
+            using (var context = new Respository<PresupuestosDetalles>())
             {
                 try
                 {
@@ -34,9 +34,9 @@ namespace BLL
             }
         }
 
-        public static PresupuestosDetalle Buscar(Expression<Func<PresupuestosDetalle, bool>> criterio)
+        public static PresupuestosDetalles Buscar(Expression<Func<PresupuestosDetalles, bool>> criterio)
         {
-            using (var context = new Respository<PresupuestosDetalle>())
+            using (var context = new Respository<PresupuestosDetalles>())
             {
                 try
                 {
@@ -50,9 +50,9 @@ namespace BLL
             }
         }
 
-        public static bool Eliminar(PresupuestosDetalle presupuestosDetalle)
+        public static bool Eliminar(PresupuestosDetalles presupuestosDetalle)
         {
-            using (var context = new Respository<PresupuestosDetalle>())
+            using (var context = new Respository<PresupuestosDetalles>())
             {
                 try
                 {
@@ -66,9 +66,9 @@ namespace BLL
             }
         }
 
-        public static List<PresupuestosDetalle> GetListAll()
+        public static List<PresupuestosDetalles> GetListAll()
         {
-            using (var context = new Respository<PresupuestosDetalle>())
+            using (var context = new Respository<PresupuestosDetalles>())
             {
                 try
                 {
@@ -82,9 +82,9 @@ namespace BLL
             }
         }
 
-        public static List<PresupuestosDetalle> GetList(Expression<Func<PresupuestosDetalle, bool>> criterio)
+        public static List<PresupuestosDetalles> GetList(Expression<Func<PresupuestosDetalles, bool>> criterio)
         {
-            using (var context = new Respository<PresupuestosDetalle>())
+            using (var context = new Respository<PresupuestosDetalles>())
             {
                 try
                 {

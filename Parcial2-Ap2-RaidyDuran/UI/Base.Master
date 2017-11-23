@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="Parcial2_Ap2_RaidyDuran.UI.Base" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <!--Inclusión de Bootstrap-->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Inclusión de JQuery-->
+    <script src="../../Scripts/jquery-3.2.1.min.js"></script>
+
+    <!--Inclusión de poppers-->
+    <script src="../../Scripts/popper.min.js"></script>
+
+    <!--Inclusión de Bootstrap Js-->
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+    <!--Inclusión de scripts Personales-->
+    <script src="../../Scripts/MyScripts.js"></script>
+
+    <!--Inclusión de CSS toast-->
+    <link href="../../Content/toastr.css" rel="stylesheet" />
+
+    <!--Inclusión de Style Sheet Personal-->
+    <link rel="stylesheet" href="../../CSS/MyStyles.css" />
+
+    <!--Inclusión de JS toast-->
+    <script src="../../Scripts/toastr.js"></script>
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
